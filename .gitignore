@@ -1,7 +1,7 @@
 Include/
 Lib/
 Scripts/
-_pycache_
+_pycache_/
 pyvenv.cfg
 tempCodeRunnerFile.py
 credentials.json
