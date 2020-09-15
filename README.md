@@ -9,10 +9,10 @@
 
 # Requirements:
 - python 3.6 or above
-- python requests module
-- python  beautifulsoup4 module
-- python gspread module
-- google account (gmail aswell)
+- python requests module (pip install requests)
+- python  beautifulsoup4 module (pip install beautifulsoup4)
+- python gspread module (pip install gspread)
+- google account (for google sheets, and email notyfication)
 
 # Setup:
 1) Create two google sheets: 
