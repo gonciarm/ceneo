@@ -26,8 +26,8 @@
 6) Create user variables in the system to store secret data like: email adress, email password, google sheets id.
 (check this tutorial that explains how to create user variables in the system: https://www.youtube.com/watch?v=IolxqkL7cD8).
 7) Configure the data you want to be scraped in 1 spread sheet:
- - Ceneo_Id = number value after in domain name on item page https://www.ceneo.pl/83359603, this attribute is required
- - Item_Name = name entered by user under which item will be stored in data sheet, this attribute is required
- - Target_Price = desired price also triggers email notification, this attribute is not required
+ - Ceneo_Id = number value after in domain name on item page https://www.ceneo.pl/83359603 (this parameter is required)
+ - Item_Name = name entered by user under which item will be stored in data sheet (this parameter is required)
+ - Target_Price = desired price also triggers email notification (this parameter is not required)
 8) Adjust the script in config.py to met your expectations.
 9) Allow less secure apps to access google email (https://myaccount.google.com/lesssecureapps)
