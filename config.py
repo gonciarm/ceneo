@@ -11,5 +11,5 @@ url = 'https://www.ceneo.pl/' #ceneo.pl url
 gc = gspread.service_account(filename='credentials.json') #google sheet api connection
 
 #Google sheets ids
-ceneoItemsSheetId = os.environ.get('CENEO_ITEMS_LIST') #id of google spreadsheet containing list of items to price check
-ceneoDataSheetId = os.environ.get('CENEO_DATA_SHEET') #id of google spreadsheet in which data will be stored
+ceneoItemsSheetId = os.environ.get('CENEO_ITEMS_LIST') #id of google spreadsheet containing list of items to price check stored in system user variable
+ceneoDataSheetId = os.environ.get('CENEO_DATA_SHEET') #id of google spreadsheet in which data will be stored stored in system user variable
