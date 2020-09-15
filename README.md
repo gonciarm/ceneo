@@ -21,10 +21,8 @@
 2) Create new project in google developers console: https://console.developers.google.com.
 3) Add two API interfaces to the project: Google Sheets API, Google Drive API.
 4) Get service account credentials in json format (save it and add it to script folder with name changed to credentials.json)
-5) Share the created sheets with appication bot email.
-(check this tutorial that explains a lot of topics: https://www.youtube.com/watch?v=T1vqS1NL89E)
-6) Create user variables in the system to store secret data like: email adress, email password, google sheets id.
-(check this tutorial that explains how to create user variables in the system: https://www.youtube.com/watch?v=IolxqkL7cD8).
+5) Share the created sheets with appication bot email. (check this tutorial that explains a lot of topics: https://www.youtube.com/watch?v=T1vqS1NL89E)
+6) Create user variables in the system to store secret data like: email adress, email password, google sheets id. (check this tutorial that explains how to create user variables in the system: https://www.youtube.com/watch?v=IolxqkL7cD8).
 7) Configure the data you want to be scraped in 1 spread sheet:
   - Ceneo_Id = number value after in domain name on item page https://www.ceneo.pl/83359603 (this parameter is required)
   - Item_Name = name entered by user under which item will be stored in data sheet (this parameter is required)
