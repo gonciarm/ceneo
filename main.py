@@ -37,7 +37,9 @@ for item in ceneoItemsList.sheet1.get_all_records(): #gets all fields from works
     scriptText = soup.find_all('script') #search for specific text in the parsed response
     text = str(scriptText) #change to the string format
     lowestPrice = float(re.search(r'"lowPrice":.+\d', text).group().split(' ')[1]) #search for specific text pattern to get associated lowest price value
-    if lowestPrice <= float(item['Target_Price'].replace(',','.')): #condition checking if lowest price is <= desired price set in google spreadsheet
+    if item['Target_Price'] == '':
+        ceneoItemsData.sheet1.append_row([item['Item_Name'],lowestPrice, date.today().strftime('%Y-%m-%d')]) #check if target price was set
+    elif lowestPrice <= float(item['Target_Price'].replace(',','.')): #condition checking if lowest price is <= desired price set in google spreadsheet
         sendEmail(item['Item_Name'], lowestPrice) #sendEmail function is triggered when condition was met
         ceneoItemsData.sheet1.append_row([item['Item_Name'],lowestPrice, date.today().strftime('%Y-%m-%d')]) #data saved in spreadsheet
     else:
