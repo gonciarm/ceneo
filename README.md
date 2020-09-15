@@ -15,7 +15,7 @@ Requirements:
 - google account (gmail aswell)
 
 Setup:
-# Create two google sheets: 
+#1 Create two google sheets: 
 - 1 sheet containing  three columns in exact order: Ceneo_ID (text type), Item_Name (text type), Target_Price (number type), 
 - 2 sheet containing  three column in exact order: Item_Name (text type), Price (number type), Date (date type)
 
