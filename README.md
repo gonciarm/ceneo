@@ -16,8 +16,10 @@ Requirements:
 
 Setup:
 1 Create two google sheets: 
+
 - 1 sheet containing  three columns in exact order: Ceneo_ID (text type), Item_Name (text type), Target_Price (number type), 
 - 2 sheet containing  three column in exact order: Item_Name (text type), Price (number type), Date (date type)
+
 2 Create new project in google developers console: https://console.developers.google.com.
 3 Add two API interfaces to the project: Google Sheets API, Google Drive API.
 4 Get service account credentials in json format (save it and add it to script folder with name changed to credentials.json)
